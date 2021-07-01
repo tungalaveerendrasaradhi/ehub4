@@ -1,0 +1,57 @@
+
+{% extends 'index.html' %}
+
+{% block body %}
+
+
+
+		<div id="site-content">
+			<main class="main-content">
+				<div class="container">
+					<div class="page">
+						<div class="breadcrumbs">
+							<a href="{{url_for('home')}}">Home</a>
+							<a href="{{url_for('about')}}">About</a>
+							<a href="{{url_for('review')}}">Review</a>
+							<span>Contact</span>
+						</div>
+
+						<div class="content">
+							<div class="row">
+								<div class="col-md-4">
+									<h2>Contact</h2>
+									<ul class="contact-detail">
+										<li>
+											<img src="../static/img/icon-contact-map.png" alt="#">
+											<address><span>Entertainment-Hub. INC</span> <br>25 krishnalanka ,Vijayawada,India</address>
+										</li>
+										<li>
+											<img src="../static/img/icon-contact-phone.png" alt="">
+											<a href="tel:1590912831">+91 6303 266 429</a>
+										</li>
+										<li>
+											<img src="../static/img/icon-contact-message.png" alt="">
+											<a href="mailto:contact@companyname.com">contact@EntertainmentHub.com</a>
+										</li>
+									</ul>
+									<div class="contact-form">
+										<input type="text" class="name" placeholder="name...">
+										<input type="text" class="email" placeholder="email...">
+										<input type="text" class="website" placeholder="website...">
+										<textarea class="message" placeholder="message..."></textarea>
+										<input type="submit" value="Send Message ">
+									</div>
+								</div>
+								<div class="col-md-7 col-md-offset-1">
+									<div class="map"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .container -->
+			</main>
+		</div>
+		<!-- Default snippet for navigation -->
+		
+
+{% endblock%}		
